@@ -1,5 +1,10 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";  // Importar Bootstrap
+import "@fortawesome/fontawesome-free/css/all.min.css";  // Importar FontAwesome
+import "./globals.css";  // Tus estilos globales
+import '../styles/flaticon.css';
+import '../styles/responsive.css';
+import '../styles/color.css';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,7 +26,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div className="wrapper">
+          {children}
+        </div>
       </body>
     </html>
   );
