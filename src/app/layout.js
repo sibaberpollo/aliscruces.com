@@ -7,6 +7,9 @@ import '../styles/responsive.css';
 import '../styles/color.css';
 import '../styles/animate.css';
 
+import Header from '@/components/Header';  // Importar el Header
+import Footer from '@/components/Footer';  // Importar el Footer
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -28,7 +31,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="wrapper">
+          <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

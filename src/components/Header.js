@@ -69,9 +69,21 @@ export default function Header() {
               </a>
             </Link>
             <ul className="social-links">
-              <li><Link href="https://facebook.com" className="facebook"><i className="fab fa-facebook"></i></Link></li>
-              <li><Link href="https://spotify.com" className="spotify"><i className="flaticon-spotify"></i></Link></li>
-              <li><Link href="https://soundcloud.com" className="soundcloud"><i className="flaticon-soundcloud-logo"></i></Link></li>
+              <li>
+                <Link href="https://www.instagram.com/aliscruces/" className="instagram">
+                  <i className="fab fa-instagram"></i>
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.youtube.com/@aliscruces" className="youtube">
+                  <i className="fab fa-youtube"></i>
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.patreon.com/AlisCruces" className="patreon">
+                  <i className="fab fa-patreon"></i>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

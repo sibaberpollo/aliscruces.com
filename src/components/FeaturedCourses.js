@@ -9,7 +9,6 @@ export default function FeaturedCourses() {
           <h2>
             Featured <span>Courses</span>
           </h2>
-          <i className="flaticon-playlist"></i>
         </div>
 
         <div className="authors-sec v5">

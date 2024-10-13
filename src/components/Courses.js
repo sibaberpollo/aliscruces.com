@@ -11,8 +11,8 @@ export default function Courses({ imgSrc, name, role, profileLink, playlistLink 
           </Link>
         </h3>
         <span>{role}</span>
-        <Link href={playlistLink} className="playlist-icon">
-          <i className="flaticon-playlist-1"></i>
+        <Link href={playlistLink} className="playlist-icon patreon-icon">
+          <i className="fab fa-patreon"></i>
         </Link>
       </div>
     </div>

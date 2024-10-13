@@ -5188,3 +5188,14 @@ iframe#twitter-widget-0 {
 	padding: 10px 0; /* Ajusta el padding si es necesario */
   }
   
+  .patreon-icon i {
+	color: #F96854; /* Color oficial de Patreon */
+	font-size: 24px;
+	position: relative;
+	top: 3px;
+  }
+  
+  .patreon-icon,
+  .patreon-icon:hover {
+	background-color: rgba(249,104,84,0.30); /* Color de fondo con opacidad */
+  }
