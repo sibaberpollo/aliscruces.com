@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Biografía de Alis Cruces | Músico Venezolano',
   description:
@@ -14,7 +16,7 @@ export default function QuienEsAlisCruces() {
               <div className="blog-single">
                 <div className="blog-post v2">
                   <div className="blog-thumbnail">
-                    <img src="/images/resources/blog-large.jpg" alt="" className="w-100" />
+                    <Image src="/images/resources/blog-large.jpg" alt="" className="w-100" width={1000} height={600} />
                     <div className="like-post">
                       <i className="flaticon-heart-1"></i>
                       <span>12</span>
@@ -31,28 +33,28 @@ export default function QuienEsAlisCruces() {
                         <a href="#" title="">10 Apr 2020</a>
                       </li>
                     </ul>
-                    <h2>Anniversary of Elton John’s Most Popular Work</h2>
+                    <h2>Anniversary of Elton John&apos;s Most Popular Work</h2>
                     <p>Integer sollicitudin ligula non enim sodales, non lacinia nunc ornare...</p>
-                    <p>quiam ligula.Aenamet, consectetuer adipiscing elit. Phasellus hendrerit...</p>
+                    <p>quiam ligula. Aenamet, consectetuer adipiscing elit. Phasellus hendrerit...</p>
                     <blockquote>
-                      <p>Podcasting is hard work! It's such a relief to have a team like Acast...</p>
+                      <p>Podcasting is hard work! It&apos;s such a relief to have a team like Acast...</p>
                     </blockquote>
                     <div className="row">
                       <div className="col-sm-6">
-                        <img src="/images/resources/imgg7.jpg" alt="" className="w-100 mb-30" />
+                        <Image src="/images/resources/imgg7.jpg" alt="" className="w-100 mb-30" width={500} height={300} />
                       </div>
                       <div className="col-sm-6">
-                        <img src="/images/resources/imgg8.jpg" alt="" className="w-100" />
+                        <Image src="/images/resources/imgg8.jpg" alt="" className="w-100" width={500} height={300} />
                       </div>
                     </div>
                     <ul className="points">
                       <li>Music industry fairer for independent musicians</li>
-                      <li>Release all of your music onto the world’s</li>
+                      <li>Release all of your music onto the world&apos;s platforms</li>
                       <li>100% of the rights to your songs</li>
                       <li>Support and promote your music globally</li>
-                      <li>Passionate about artists’ rights...</li>
+                      <li>Passionate about artists&apos; rights...</li>
                     </ul>
-                    <p>udin ligula non enim sodales, non lacinia nunc ornare...</p>
+                    <p>Udin ligula non enim sodales, non lacinia nunc ornare...</p>
                     <div className="blog-music">
                       <div className="music-player">
                         <div className="maudio">
@@ -66,7 +68,7 @@ export default function QuienEsAlisCruces() {
                       </div>
                     </div>
                     <div className="vid-music">
-                      <img src="/images/resources/vid-music.jpg" alt="" className="w-100" />
+                      <Image src="/images/resources/vid-music.jpg" alt="" className="w-100" width={1000} height={600} />
                       <div className="vid_play">
                         <div className="mss-player">
                           <div className="mm-audio">
