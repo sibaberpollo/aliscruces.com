@@ -1,7 +1,7 @@
-import Header from '../components/Header';
-import MainBanner from '../components/MainBanner';
-import WelcomeSection from '../components/WelcomeSection';
-import PatreonSection from '../components/FeaturedCourses';
+import Header from '@/components/Header';
+import MainBanner from '@/components/MainBanner';
+import WelcomeSection from '@/components/WelcomeSection';
+import PatreonSection from '@/components/FeaturedCourses';
 import Footer from '@/components/Footer';
 
 

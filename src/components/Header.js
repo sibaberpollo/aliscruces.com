@@ -1,11 +1,33 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileMenu from './MobileMenu';
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header className="pb">
-      <div className="bottom-header">
+      <div className={`bottom-header ${isScrolled ? 'sticky animated slideInDown' : ''}`}>
         <div className="container">
           <div className="header-content">
             <div className="logo">
@@ -16,9 +38,7 @@ export default function Header() {
             <nav>
               <ul>
                 <li>
-                  <Link href="/">
-                    Home
-                  </Link>
+                  <Link href="/">Home</Link>
                   <ul>
                     <li><Link href="/">Homepage 1</Link></li>
                     <li><Link href="/index2">Homepage 2</Link></li>
@@ -32,19 +52,7 @@ export default function Header() {
                   </ul>
                 </li>
                 <li><Link href="/podcasts">Podcasts</Link></li>
-                <li>
-                  <Link href="/blog">Blog</Link>
-                  <ul>
-                    <li><Link href="/blog-sidebar">Blog Sidebar</Link></li>
-                    <li><Link href="/blog-wide">Blog Wide</Link></li>
-                    <li><Link href="/blog-grid">Blog Grid</Link></li>
-                    <li><Link href="/blog-grid-sidebar">Blog Grid Sidebar</Link></li>
-                    <li><Link href="/blog-details">Blog Details 01</Link></li>
-                    <li><Link href="/blog-details-v2">Blog Details 02</Link></li>
-                    <li><Link href="/blog-details-v3">Blog Details 03</Link></li>
-                    <li><Link href="/blog-details-v4">Blog Details 04</Link></li>
-                  </ul>
-                </li>
+                <li><Link href="/blog">Blog</Link></li>
                 <li><Link href="/authors">Authors</Link></li>
                 <li><Link href="/sponsors">Sponsor</Link></li>
                 <li><Link href="/contact">Contact</Link></li>

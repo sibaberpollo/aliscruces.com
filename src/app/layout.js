@@ -5,6 +5,7 @@ import "./globals.css";  // Tus estilos globales
 import '../styles/flaticon.css';
 import '../styles/responsive.css';
 import '../styles/color.css';
+import '../styles/animate.css';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
