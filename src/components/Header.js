@@ -7,6 +7,7 @@ import MobileMenu from './MobileMenu';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [menuActive, setMenuActive] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,10 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
 
   return (
     <header className="pb">
@@ -58,8 +63,10 @@ export default function Header() {
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </nav>
-            <Link href="/" className="menu-btn">
-              <Image src="/images/bars2.png" alt="Menu" width={30} height={30} />
+            <Link href="/" legacyBehavior>
+              <a className="menu-btn" onClick={toggleMenu}>
+                <Image src="/images/bars2.png" alt="Menu" width={30} height={30} />
+              </a>
             </Link>
             <ul className="social-links">
               <li><Link href="https://facebook.com" className="facebook"><i className="fab fa-facebook"></i></Link></li>
@@ -69,7 +76,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <MobileMenu />
+      <MobileMenu menuActive={menuActive} toggleMenu={toggleMenu} />
     </header>
   );
 }

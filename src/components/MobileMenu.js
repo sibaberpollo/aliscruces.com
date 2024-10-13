@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-export default function MobileMenu() {
+export default function MobileMenu({ menuActive, toggleMenu }) {
   return (
-    <div className="responsive-mobile-menu d-flex flex-wrap align-items-end">
-      <Link href="/" className="close-menu">
+    <div className={`responsive-mobile-menu d-flex flex-wrap align-items-end ${menuActive ? 'active' : ''}`}>
+      <button onClick={toggleMenu} className="close-menu">
         <i className="fa fa-times"></i>
-      </Link>
+      </button>
       <ul className="mb-menu">
         <li>
           <Link href="/">Home</Link>

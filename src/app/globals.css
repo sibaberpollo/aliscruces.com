@@ -4768,6 +4768,7 @@ iframe#twitter-widget-0 {
 	overflow-y: auto;
 	opacity: 0;
 	visibility: hidden;
+	background-image: url('/images/resources/banner-img2.jpg');
 	-webkit-transform: translateX(-100%);
 	-moz-transform: translateX(-100%);
 	-ms-transform: translateX(-100%);
