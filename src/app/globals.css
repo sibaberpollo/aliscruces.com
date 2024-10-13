@@ -1,4 +1,10 @@
 
+:root {
+    --gray-color: #666666;
+    --orange-color: #FC5618;
+    --blue-color: #0A3BD6;
+    --green-color: #86D546;
+}
 
 /*===================== TABLE OF CONTENT =======================
 
@@ -1571,13 +1577,13 @@ div.maudio .audio-control a.fast-reverse:hover:before, div.maudio .audio-control
 	font-size: 24px;
 }
 .flaticon-spotify {
-	color: #00d665;
+	color: var(--green-color);;
 }
 .flaticon-itunes {
 	color: #ff3a4c;
 }
 .flaticon-soundcloud-logo {
-	color: #f8630f;
+	color: var(--orange-color);;
 }
 .listen-dv > ul li > h4 {
 	color: #333333;
@@ -1969,7 +1975,7 @@ div.maudio .audio-control a.fast-reverse:hover:before, div.maudio .audio-control
 	margin-bottom: 42px;
 }
 .social-links li a.facebook i {
-	color: #1976d3;
+	color: var(--blue-color);;
 	font-size: 24px;
 	position: relative;
 	top: 3px;
@@ -4991,7 +4997,7 @@ iframe#twitter-widget-0 {
 	cursor: pointer;
 }
 .color-schemes ul li a.color1 {
-	background-color: #00d665;
+	background-color: var(--green-color);;
 }
 .color-schemes ul li a.color2 {
 	background-color: #ff3b3f;
